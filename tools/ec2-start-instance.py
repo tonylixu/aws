@@ -28,7 +28,7 @@ if action == 'ON':
 elif action == 'OFF':
     # Do a dryrun first to verify permissions
     try:
-        ec2.stop_instanecs(InstanceIds=[instance_id], DryRune=True)
+        ec2.stop_instances(InstanceIds=[instance_id], DryRune=True)
     except ClientError as e:
         if 'DryRunOperation' not in str(e):
             raise
