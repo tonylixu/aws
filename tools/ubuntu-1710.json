@@ -3,11 +3,17 @@
         "aws_access_key": "",
         "aws_secret_key": ""
     },
-    "provisioners": [{
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/ansible.sh"
+        },
+        {
         "type": "ansible-local",
         "playbook_file": "ansible/main.yml",
         "galaxy_file": "requirements.yml"
-    }],
+        }
+    ],
     "builders":[{
         "type": "amazon-ebs",
         "access_key": "{{user `aws_access_key`}}",
