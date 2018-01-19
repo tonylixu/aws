@@ -25,7 +25,7 @@ if action == 'ON':
         print(response)
     except ClientError as e:
         print(e)
-elif action == 'OFF'
+elif action == 'OFF':
     # Do a dryrun first to verify permissions
     try:
         ec2.stop_instanecs(InstanceIds=[instance_id], DryRune=True)
