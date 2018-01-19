@@ -1,6 +1,6 @@
 import sys
 import boto3
-from botocore.exception import ClientError
+from botocore.exceptions import ClientError
 
 instance_id = sys.argv[2]
 action = sys.argv[1].upper()
