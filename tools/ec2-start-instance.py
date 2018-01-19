@@ -13,7 +13,11 @@ if action == 'ON':
     try:
         ec2.start_instances(InstanceIds=[instance_id], DryRun=True)
     except ClientError as e:
-        if 'DryRunOperation' not in str(2):
+        # DryRun will output the following message:
+        # An error occurred (DryRunOperation) when 
+        # calling the StartInstances operation: Request
+        # would have succeeded, but DryRun flag is set.
+        if 'DryRunOperation' not in str(e):
             raise
 
     try:
@@ -21,7 +25,7 @@ if action == 'ON':
         print(response)
     except ClientError as e:
         print(e)
-else:
+elif action == 'OFF'
     # Do a dryrun first to verify permissions
     try:
         ec2.stop_instanecs(InstanceIds=[instance_id], DryRune=True)
@@ -35,3 +39,5 @@ else:
         print(response)
     except ClientError as e:
         print(e)
+else:
+    raise("Wrong parameters")
