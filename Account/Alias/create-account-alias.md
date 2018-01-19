@@ -12,3 +12,15 @@ To Create or remove an account alias from UI
 * Find the IAM users sign-in link, and click Customize to the right of the link.
 * Type the name you want to use for your alias, then click Yes, Create.
 * To remove the alias, click Customize, and then click Yes, Delete. The sign-in URL reverts to using your AWS account ID.
+
+To Create or remove an account alias from CLI (You will need to have the aws CLI installed):
+
+To create:
+```bash
+aws iam create-account-alias
+```
+
+To Remove:
+```bash
+aws iam list-account-aliases
+```
