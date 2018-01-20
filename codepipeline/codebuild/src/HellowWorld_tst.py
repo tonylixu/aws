@@ -1,5 +1,5 @@
 import unittest
-form HelloWorld import HelloWorld
+from HelloWorld import HelloWorld
 
 class MyTestCase(unittest.TestCase):
     def test_default_greeting_set(self):
