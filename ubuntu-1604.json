@@ -10,8 +10,7 @@
         },
         {
         "type": "ansible-local",
-        "playbook_file": "ansible/main.yml",
-        "galaxy_file": "requirements.yml"
+        "playbook_file": "ansible/main.yml"
         }
     ],
     "builders":[{
@@ -22,7 +21,7 @@
         "source_ami_filter": {
             "filters": {
                 "virtualization-type": "hvm",
-                "name": "tony-ubuntu/images/ubuntu-17.10.1-server-amd64.iso",
+                "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
                 "root-device-type": "ebs"
             },
             "owners": ["099720109477"],
