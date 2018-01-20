@@ -3,3 +3,9 @@ The purpose of this simple Python example is to create a dummy AWS CodeBuild pro
 
 ### Create Build Project JSON File
 Pleaes check `movies-db-proj.json` file in this directory.
+You need to run:
+```bash
+$ aws codebuild create-project --cli-input-json file://movies-db-proj.json
+```
+
+### 
