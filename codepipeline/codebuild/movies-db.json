@@ -1,0 +1,50 @@
+{
+    "projects": [
+        {
+            "badge": {
+                "badgeEnabled": false
+            },
+            "tags": [],
+            "source": {
+                "location": "your-proj-code-commit-address",
+                "buildspec": "buildspec.yml",
+                "type": "CODECOMMIT"
+            },
+            "vpcConfig": {
+                "securityGroupIds": [
+                    "sg-xxxxxxx"
+                ],
+                "subnets": [
+                    "subnet-xxxxxx"
+                ],
+                "vpcId": "vpc-xxxxxx"
+            },
+            "serviceRole": "arn:aws:iam::xxxxxxxxx:role/service-role/codebuild-movies-db-proj-service-role",
+            "environment": {
+                "environmentVariables": [],
+                "computeType": "BUILD_GENERAL1_SMALL",
+                "privilegedMode": false,
+                "image": "aws/codebuild/python:3.5.2",
+                "type": "LINUX_CONTAINER"
+            },
+            "artifacts": {
+                "path": "movies-db-proj",
+                "type": "S3",
+                "name": "movies-db-proj",
+                "namespaceType": "BUILD_ID",
+                "location": "mchen-movies",
+                "packaging": "NONE"
+            },
+            "arn": "arn:aws:codebuild:us-east-1:xxxxxxx:project/movies-db-proj",
+            "timeoutInMinutes": 60,
+            "name": "movies-db-proj",
+            "cache": {
+                "type": "NO_CACHE"
+            },
+            "created": 1516464345.24,
+            "encryptionKey": "arn:aws:kms:us-east-1:xxxxxxxxx:alias/aws/s3",
+            "lastModified": 1516464345.24
+        }
+    ],
+    "projectsNotFound": []
+}
