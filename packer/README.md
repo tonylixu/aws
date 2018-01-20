@@ -17,3 +17,11 @@ Archive:  packer_1.1.3_linux_amd64.zip
 # which packer
 /usr/local/bin/packer
 ```
+
+### Bake AWS ami
+* You need to create a packer AMI profile in JSON format (ubuntu-1604.json).
+* Run the following command:
+```bash
+$ packer build     -var 'aws_access_key=XXXXXXXXXXXXXXXX'     -var 'aws_secret_key=XXXXXXXXXXXXXCwK+x'     ubuntu-1604.json
+```
+* If all goes well, you will find the newly backed AMI in your AMIs from AWS console.
