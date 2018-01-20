@@ -22,4 +22,4 @@ $ aws codebuild list-projects
 Please see `codecommit` folder for instructions.
 
 ### Build You Artifact
-Just simple go to CodeBuild, select your project, and build. (CLI version will come soon).
+Just simple go to CodeBuild, select your project, and build. (CLI version will come soon). After successful build, you should be able to see your artifacts in the destination location (AWS s3 in our example).
