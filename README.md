@@ -46,3 +46,5 @@ After new artifacts are built, they will be audo-deployed to new EC2 instances, 
   * AWSCodeBuildAdminAccess
 3. [Create a user "test" in "Developers" group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) and make sure you enable MFA, and also create "Access Key" for this user.
 4. Build your own AMI by using packer. The AMI will be used as base AMI when we spin up new EC2 instances. Check `packer` folder for detailed instructions.
+5. Set up your repository in CodeCommit. See (codepipeline/codecommit/) folder for detailed instructions.
+6. Set up your build project in CodeBuild. See (codepipeline/codebuild) folder for detailed instructions.
