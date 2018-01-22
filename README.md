@@ -34,3 +34,13 @@ After new artifacts are built, they will be audo-deployed to new EC2 instances, 
 
 ### Project architecture/flowchart:
 ![Project flowchart](files/image/architecture.JPG)
+
+## Implementation steps:
+1. [Create a AWS account](https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_account_p_control_q32016&sc_detail=create%20aws%20account&sc_category=cloud_computing&sc_segment=102882714042&sc_matchtype=p&sc_country=US&s_kwcid=AL!4422!3!102882714042!p!!g!!create%20aws%20account&ef_id=WiBbmgAABHt7gARB:20180122215959:s)
+2. [Create a "Developers" Group in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_create.html) with the following policies:
+  * AmazonEC2FullAccess
+  * AWSCodeCommitFullAccess
+  * IAMFullAccess
+  * AmazonS3FullAccess
+  * AWSCodeDeployFullAccess
+  * AWSCodeBuildAdminAccess
