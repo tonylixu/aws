@@ -26,3 +26,8 @@ AWS serviecs:
 * CloudWatch - CI/CD pipeline monitoring and notification
 * CloudTrail - Account/User and application activity usage tacking
 * KMS - Uesr data encryption
+
+### Project Goal
+After the implementation, you should have a working CI/CD pipeline in your AWS account. Whenever you merge a pull request into master, the CodePipeline should be automatically triggered and start building and packing new artifacts based on the changes. 
+
+After new artifacts are built, they will be audo-deployed to new EC2 instances, old instanes that running old version of the application will be terminated after new version is successfully deployed, traffic will be re-route to the new instances.
