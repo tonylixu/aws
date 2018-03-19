@@ -1,5 +1,8 @@
 ## Install pip on AWS Instance
 
+### For Python2.7.9+ or Python 3.4+
+Congrats, you should already have `pip` installed.
+
 1. Download the installation script from pypa.io:
 ```bash
 curl -O https://bootstrap.pypa.io/get-pip.py
