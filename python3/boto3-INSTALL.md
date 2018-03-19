@@ -2,7 +2,7 @@
 
 ### Install the lastest Boto3 via pip
 ```bash
-$ sudo pip install boto3 --user
+$ sudo pyhton3 -m pip install boto3
 ```
 
 ### Configure AWS
