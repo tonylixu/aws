@@ -1,0 +1,12 @@
+{
+    "images": [
+        { 
+            "name": "amzn-ami-hvm-2017.03.1.20170812-x86_64-gp2",
+            "ami-id": "ami-5ac17f3e"
+        },
+        {
+            "name": "amzn-ami-hvm-2017.09.1.20180307-x86_64-gp2",
+            "ami-id": "ami-5b55d23f"
+        }
+    ]
+}
