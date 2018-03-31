@@ -17,3 +17,8 @@ sudo service docker start
 # Add the ec2-user to the docker group so we 
 # can execute Docker commands without using sudo
 sudo usermod -a -G docker ec2-user
+# Install Docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.20.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo service docker start
+sudo chkconfig docker on
