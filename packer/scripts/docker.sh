@@ -10,7 +10,10 @@
 ##     + echo hey
 ##     hey
 
-# Install nodejs
+# Install Docker
 sudo yum update -y
 sudo yum install -y docker
 sudo service docker start
+# Add the ec2-user to the docker group so we 
+# can execute Docker commands without using sudo
+sudo usermod -a -G docker ec2-user
